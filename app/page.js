@@ -69,17 +69,14 @@ export default function Page() {
           <h3 className="text-xl font-semibold text-gray-900 mb-5">
             SFWW Video
           </h3>
-          <p className="mb-5 font-normal text-gray-500">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/2LUu2DQYa60"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </p>
+          <iframe
+            className="aspect-video w-full"
+            src="https://www.youtube.com/embed/2LUu2DQYa60"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </Modal>
     </>

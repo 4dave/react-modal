@@ -14,7 +14,7 @@ export default function Modal({ isVisible, onClose, children }) {
       onClick={handleClose}
     >
       {/* <div className="sm:w-[600px] w-[90%] flex flex-col"> */}
-      <div className="px-2 w-[600px] flex flex-col">
+      <div className="px-2 sm:w-[600px] w-full flex flex-col">
         <button
           className="text-white text-xl place-self-end"
           onClick={() => onClose()}

@@ -5,6 +5,7 @@ import Modal from "./utils/modal"
 
 export default function Page() {
   const [showModal, setShowModal] = useState(false)
+  const [showModal2, setShowModal2] = useState(false)
   return (
     <>
       <div className="m-10">
@@ -14,6 +15,12 @@ export default function Page() {
           className="border rounded-sm p-2 m-2"
         >
           Modal
+        </button>
+        <button
+          onClick={() => setShowModal2(true)}
+          className="border rounded-sm p-2 m-2"
+        >
+          Video Modal
         </button>
         <p>
           BROOKLYN PARK, Minn. — Chet Holmgren's rookie season ended before it
@@ -53,6 +60,25 @@ export default function Page() {
             doloribus, blanditiis accusantium excepturi? Error vitae laudantium,
             ipsum praesentium iure, voluptate sit ab quos et minima animi quas
             quia tenetur, repellendus optio veritatis.
+          </p>
+        </div>
+      </Modal>
+
+      <Modal isVisible={showModal2} onClose={() => setShowModal2(false)}>
+        <div className="p-0">
+          <h3 className="text-xl font-semibold text-gray-900 mb-5">
+            SFWW Video
+          </h3>
+          <p className="mb-5 font-normal text-gray-500">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/2LUu2DQYa60"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </p>
         </div>
       </Modal>

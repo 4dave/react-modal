@@ -1,13 +1,13 @@
 "use client"
 
 import { useState } from "react"
-import Modal from "./(modal)/modal"
+import Modal from "./utils/modal"
 
 export default function Page() {
   const [showModal, setShowModal] = useState(false)
   return (
     <>
-      <div className="flex flex-col justify-center mx-auto items-center h-screen w-[75%] my-auto">
+      <div className="m-10">
         <h1>Hello, Next.js!</h1>
         <button
           onClick={() => setShowModal(true)}

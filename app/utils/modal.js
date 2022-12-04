@@ -2,7 +2,6 @@ export default function Modal({ isVisible, onClose, children }) {
   if (!isVisible) return null
 
   const handleClose = (e) => {
-    // if the user clicks on the overlay, close the modal
     if (e.target.id === "wrapper") {
       onClose()
     }
@@ -14,7 +13,8 @@ export default function Modal({ isVisible, onClose, children }) {
       id="wrapper"
       onClick={handleClose}
     >
-      <div className="w-[600px] flex flex-col">
+      {/* <div className="sm:w-[600px] w-[90%] flex flex-col"> */}
+      <div className="px-2 w-[600px] flex flex-col">
         <button
           className="text-white text-xl place-self-end"
           onClick={() => onClose()}
